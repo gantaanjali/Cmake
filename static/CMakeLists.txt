@@ -1,0 +1,5 @@
+project(cmake)
+include_directories(${PROJECT_SOURCE_DIR}/exe)
+add_executable(target main.cpp)
+add_library(hello  STATIC file11.c file12.c file13.c file14.c file15.c header.h)
+target_link_libraries(target PRIVATE hello)
