@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10.2)
+project(cmake)
+
+add_executable(app main.cpp)
+add_library(main SHARED hello.c add.c multi.c swap.c fact.c sub.c bye.c close.c header.h)
+target_link_libraries(app  main)
