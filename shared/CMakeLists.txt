@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10.2)
+project(cmake)
+include_directories(BEFORE ${CMAKE_SOURCE_DIR}/static)
+include_directories(BEFORE ${CMAKE_SOURCE_DIR}/static ${CMAKE_CURRENT_SOURCE_DIR})
+add_executable(exe main.cpp file16.c file17.c file18.c file19.c file20.c header.h )
